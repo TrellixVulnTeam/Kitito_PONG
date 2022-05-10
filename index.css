@@ -4,10 +4,13 @@
     box-sizing: border-box;
     text-decoration: none; 
 }
+a  {
+    text-decoration: none;
+}
 
 body {
     font-family: 'calibri';
-    background-color: #faf1ed;
+    background-color: #edf2fa;
 }
 
 nav {
@@ -19,6 +22,11 @@ nav {
     width: 100%;
     border-bottom: 1px solid #fff;
     box-shadow: 5px 0px 10px rgba(0, 0, 0, .6);
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .enlace-logo {
@@ -75,6 +83,66 @@ nav {
 
 
 /* -----------------------Index-------------------------------- */
+.body-index{
+    background: #616161;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* 
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"; */
+
+.container{
+    margin-top: 110px !important;
+}
+
+.card {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    transition: all .3s;
+}
+
+.text1{
+    font-size: 13px;
+    color: #cbcbcb;
+}
+
+.info{
+    line-height: 17px;
+}
+
+.star{
+    color: #fbc02d;
+}
+
+.cost span {
+    color: #fb3531;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-card {
+    background: #dc3545;
+}
+
+.btn-card:hover {
+    opacity: .8;
+}
+
+.cursor {
+    cursor: pointer;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+}
+
+
 
 
 .infinito {
@@ -87,54 +155,6 @@ nav {
 }
 
 
-.main__categoria {
-    margin: 75px;
-}
-
-.categoria__contenedor {
-    max-width: 1200px;
-    margin: 50px auto;
-}
-
-.categoria__titulo {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 1000;
-    margin-bottom: 20px;
-}
-
-.categoria__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 220px);
-    grid-template-rows: repeat(1, 260px);
-    gap: 10px;
-}
-.categoria__grid h2 {
-    color: white;
-}
-
-.categoria__item{
-    background: #1c1e23;
-    padding: 1rem;
-    position: relative;
-    border-radius: 20px;
-}
-
-.categoria__item h2 {
-    position: absolute;
-    margin-left: 65px;
-}
-
-.categoria__img {
-    height: 175px;
-    width: 100px;
-    margin: 40px 45px;
-}
-
-.categoria__contenedor-2 {
-    max-width: 1200px;
-    margin: 50px auto;
-}
 
 /* -----------------------Index-------------------------------- */
 
@@ -305,11 +325,11 @@ nav {
     background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     width: 100%;
-    height: 750px;
+    height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+top: 0;}
 
 .titulo__formulario {
     text-align: center;
@@ -478,11 +498,14 @@ ul{
 }
 
 .footer__titulo {
-    font-size: 18px;
+    font-size: 20px;
     color: #ffffff;
     margin-bottom: 30px;
     font-weight: 500;
     position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: start;
+    margin-left: 32px;
 
 }
 
@@ -508,19 +531,31 @@ ul{
     color: #ffffff;
 }
 
+.redes-sociales{
+    margin-left: 32px;
+}
+
 /* <-----------------Vistas------------------------------->*/
 
 @media screen and (max-width: 1024px ) {
 
     .enlace-logo{
-        padding-left: 5px;
+        padding-top:25px ;
+        padding-left: 10px;
+    }
+    .nav__lista {
+        gap: none;
     }
 
     .nav__lista li a {
         font-size: 1rem;
-        padding: 7px 7px;
+        padding: 7px 0;
     }
     
+    .nav__logo{
+        margin: 0;
+        font-size: 20px ;
+    }
     
     /* -----------------------Index-------------------------------- */
 
@@ -602,20 +637,22 @@ ul{
     .footer__columnas{
         width: 50%;
         margin-bottom: 30px;
-        text-align: center;
     }
-
 
 
 }
 @media screen and (max-width: 600px) {
+
+    body{
+        position: relative;
+    }
 
     .check-boton{
         display: block;
         margin-right: 2rem;
     }
     .nav__lista{
-        position: fixed;
+        position: absolute;
         width: 100%;
         height: 100%;
         background: #24303c;
@@ -623,7 +660,7 @@ ul{
         text-align: center;
         transition: all .5s;
         top: 79px;
-        
+        z-index: 100;
     }
 
     .nav__lista li {
@@ -634,6 +671,7 @@ ul{
 
     .nav__lista li a {
         font-size: 20px;
+        display: inline;
     }
 
     .nav__lista li a:hover{

@@ -16,7 +16,7 @@
 
         <title>Kitito - Accesorios</title>
     </head>
-    <body>
+    <body class="body-index">
         <header>
                 <nav>
                     <input type="checkbox" id="check">
@@ -35,6 +35,7 @@
                     </ul>
                 </nav>
         </header>
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
                             <img src="img/baner.png" class="d-block w-100" alt="banner">
@@ -48,9 +49,6 @@
                         <div class="carousel-item">
                             <img src="img/baner4.png" class="d-block w-100" alt="banner">
                         </div>
-                        <div class="carousel-item">
-                            <img src="img/baner5.png" class="d-block w-100" alt="banner">
-                        </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -61,63 +59,205 @@
                         <span class="visually-hidden">Siguiente</span>
                     </button>
                 </div>
-            </div>
             <div class="infinito">
                 <span><i class="fa-solid fa-infinity"></i></span>
             </div>
-        <main class="main__categoria">
-            <section class="categoria">
-                <div class="categoria__contenedor">
-                    <h1 class="categoria__titulo">Favoritos del Mes</h1>
-                    <div class="categoria__grid">
-                        <div class="categoria__item">
-                            <h2>Item 1</h2>
-                            <img class="categoria__img" src="img/MV1.png" alt="producto" height="100px" width="100px">
-                        </div>
-                        <div class="categoria__item">
-                            <h2>Item 2</h2>
-                            <img class="categoria__img" src="img/MV2.png" alt="producto" height="100px" width="100px">
-                        </div>
-                        <div class="categoria__item">
-                            <h2>Item 3</h2>
-                            <img class="categoria__img"  src="img/MV3.png" alt="producto" height="100px" width="100px">
-                        </div>
-                        <div class="categoria__item">
-                            <h2>Item 4</h2>
-                            <img  class="categoria__img" src="img/MV4.png" alt="producto" height="100px" width="100px">
-                        </div>
-                        <div class="categoria__item">
-                            <h2>Item 5</h2>
-                            <img class="categoria__img" src="img/MV5.png" alt="producto" height="100px" width="100px">
-                        </div>
-                    </div>
-                </div>
-                <div class="categoria__contenedor-2">
-                    <h1 class="categoria__titulo">Novedades </h1>
-                    <div class="categoria__grid">
-                        <div class="categoria__item">
-                            <h2>Item 1</h2>
-                            <img class="categoria__img" src="img/MV1.png" alt="producto" height="100px" width="100px">
-                        </div>
-                        <div class="categoria__item">
-                            <h2>Item 2</h2>
-                            <img class="categoria__img" src="img/MV2.png" alt="producto" height="100px" width="100px">
-                        </div>
-                        <div class="categoria__item">
-                            <h2>Item 3</h2>
-                            <img class="categoria__img"  src="img/MV3.png" alt="producto" height="100px" width="100px">
-                        </div>
-                        <div class="categoria__item">
-                            <h2>Item 4</h2>
-                            <img  class="categoria__img" src="img/MV4.png" alt="producto" height="100px" width="100px">
-                        </div>
-                        <div class="categoria__item">
-                            <h2>Item 5</h2>
-                            <img class="categoria__img" src="img/MV5.png" alt="producto" height="100px" width="100px">
+
+        <main>
+            <!-- contenedor de todos los productos -->
+            <div class="container mb-5 mt-5">
+                <div class="row">
+
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card mt-3">
+                            <div class="product-1 aling-items-center p-2 text-center">
+                                <img src="img/MV1.png" alt="Funda 1" class="rounded" width="160" height="280px">
+                                <h5>Stich de Corazones</h5>
+
+                                <!-- informacion de card -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block"> Lorem ipsum dolor sit.</span>
+                                    <span class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>$1000.00</span>
+                                    <div class="star mt-3 align-items-center">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- boton de carta -->
+                            <div class="p-3 btn-card text-center text-white mt-3 cursor">
+                                <span class="text-uppercarse">COMPRAR</span>
+                            </div>
                         </div>
                     </div>
+                    <!-- finalizacion de carta 1 -->
+
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card mt-3">
+                            <div class="product-1 aling-items-center p-2 text-center">
+                                <img src="img/MV2.png" alt="Funda 1" class="rounded" width="160" height="280px">
+                                <h5>Marmolado</h5>
+
+                                <!-- informacion de card -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block"> Lorem ipsum dolor sit.</span>
+                                    <span class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>$1000.00</span>
+                                    <div class="star mt-3 align-items-center">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- boton de carta -->
+                            <div class="p-3 btn-card text-center text-white mt-3 cursor">
+                                <span class="text-uppercarse">COMPRAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- finalizacion de carta 2 -->
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card mt-3">
+                            <div class="product-1 aling-items-center p-2 text-center">
+                                <img src="img/MV3.png" alt="Funda 1" class="rounded" width="160" height="280px">
+                                <h5>Flores Frida</h5>
+
+                                <!-- informacion de card -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block"> Lorem ipsum dolor sit.</span>
+                                    <span class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>$1000.00</span>
+                                    <div class="star mt-3 align-items-center">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- boton de carta -->
+                            <div class="p-3 btn-card text-center text-white mt-3 cursor">
+                                <span class="text-uppercarse">COMPRAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- finalizacion de carta 3 -->
+
+
+                    <!-- Card 4 -->
+                    <div class="col-md-4">
+                        <div class="card mt-3">
+                            <div class="product-1 aling-items-center p-2 text-center">
+                                <img src="img/MV4.png" alt="Funda 1" class="rounded" width="160" height="280px">
+                                <h5>Hawai en invierno</h5>
+
+                                <!-- informacion de card -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block"> Lorem ipsum dolor sit.</span>
+                                    <span class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>$1000.00</span>
+                                    <div class="star mt-3 align-items-center">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- boton de carta -->
+                            <div class="p-3 btn-card text-center text-white mt-3 cursor">
+                                <span class="text-uppercarse">COMPRAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- finalizacion de carta 4 -->
+
+                    <!-- Card 5 -->
+                    <div class="col-md-4">
+                        <div class="card mt-3">
+                            <div class="product-1 aling-items-center p-2 text-center">
+                                <img src="img/MV5.png" alt="Funda 1" class="rounded" width="160" height="280px">
+                                <h5>Grey´s Anatomy</h5>
+
+                                <!-- informacion de card -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block"> Lorem ipsum dolor sit.</span>
+                                    <span class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>$1000.00</span>
+                                    <div class="star mt-3 align-items-center">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- boton de carta -->
+                            <div class="p-3 btn-card text-center text-white mt-3 cursor">
+                                <span class="text-uppercarse">COMPRAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- finalizacion de carta 5 -->
+
+                    <!-- Card 6 -->
+                    <div class="col-md-4">
+                        <div class="card mt-3">
+                            <div class="product-1 aling-items-center p-2 text-center">
+                                <img src="img/MV6.png" alt="Funda 1" class="rounded" width="160" height="280px">
+                                <h5>Explore White</h5>
+
+                                <!-- informacion de card -->
+                                <div class="mt-3 info">
+                                    <span class="text1 d-block"> Lorem ipsum dolor sit.</span>
+                                    <span class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.</span>
+                                </div>
+                                <div class="cost mt-3 text-dark">
+                                    <span>$1000.00</span>
+                                    <div class="star mt-3 align-items-center">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- boton de carta -->
+                            <div class="p-3 btn-card text-center text-white mt-3 cursor">
+                                <span class="text-uppercarse">COMPRAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- finalizacion de carta 6 -->
+
                 </div>
-            </section>
+            </div>
+
         </main>
 
 
@@ -127,24 +267,24 @@
                     <div class="footer__columnas">
                         <h4 class="footer__titulo">Kitito</h4>
                         <ul>
-                            <li><a class="footer__enlace" href="#">Sobre nosotros</li>
-                            <li><a class="footer__enlace" href="#">Preguntas Frecuentes</li>
+                            <li><a class="footer__enlace" href="#">Sobre nosotros</a></li>
+                            <li><a class="footer__enlace" href="#">Preguntas Frecuentes</a></li>
                         </ul>
                     </div>
                     <div class="footer__columnas">
                         <h4 class="footer__titulo">Mi Cuenta</h4>
                         <ul>
-                            <li><a class="footer__enlace" href="/pages/registro.html">Registrate</li>
-                            <li><a class="footer__enlace" href="#">Ingresá</li>
-                            <li><a class="footer__enlace" href="#">Favoritos</li>
+                            <li><a class="footer__enlace" href="/pages/registro.html">Registrate</a></li>
+                            <li><a class="footer__enlace" href="#">Ingresá</a></li>
+                            <li><a class="footer__enlace" href="#">Favoritos</a></li>
                         </ul>
                     </div>
                     <div class="footer__columnas">
                         <h4 class="footer__titulo">Contactos</h4>
                         <ul>
-                            <li><a class="footer__enlace" href="#">Telefono</li>
-                            <li><a class="footer__enlace" href="#">Whatsapp</li>
-                            <li><a class="footer__enlace" href="#">ventas@kitito.com.ar</li>
+                            <li><a class="footer__enlace" href="#">Telefono</a></li>
+                            <li><a class="footer__enlace" href="#">Whatsapp</a></li>
+                            <li><a class="footer__enlace" href="#">ventas@kitito.com.ar</a></li>
                         </ul>
                     </div>
                     <div class="footer__columnas">
