@@ -1,0 +1,724 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'calibri';
+    background-color: #faf1ed;
+}
+
+nav {
+    background-color: #2fcdcd;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, .6);
+}
+
+.enlace-logo {
+    position: absolute;
+    padding: 20px;
+}
+
+.nav__logo {
+    font-family: 'Gravitas One', cursive;
+    font-size: 30px;
+    margin-left: 30px; ;
+    color: #000;
+    font-weight: bold;
+}
+
+.nav__lista li a {
+    padding: 7px 13px;
+    font-size: 18px;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+}
+
+.nav__lista {
+    float: right;
+    margin-right: 20px;
+}
+
+.nav__lista li {
+    display: inline-block;
+    margin: 20px 5px;
+}
+
+.activo, .nav__lista li a:hover {
+    background: rgb(0, 0, 100);
+    transition: .5s;
+}
+
+.check-boton {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+/* ------------------------head-------------------------------- */
+
+
+/* -----------------------Index-------------------------------- */
+
+.baner{
+    margin-bottom: 25px;
+}
+.baner__img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.baner-item {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 40px;
+    
+}
+
+.circulo {
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.circulo:hover {
+    background: rgb(29, 166, 245);
+    transition: all .3s;
+}
+
+.infinito {
+    margin-left: 75px;
+    font-size: 75px;
+    color: rgb(255, 72, 0)
+}
+.infinito span i {
+    text-transform: uppercase;
+}
+
+
+.main__categoria {
+    margin: 75px;
+}
+
+.categoria__contenedor {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.categoria__titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 1000;
+    margin-bottom: 20px;
+}
+
+.categoria__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    grid-template-rows: repeat(1, 260px);
+    gap: 10px;
+}
+.categoria__grid h2 {
+    color: white;
+}
+
+.categoria__item{
+    background: #1c1e23;
+    padding: 1rem;
+    position: relative;
+    border-radius: 20px;
+}
+
+.categoria__item h2 {
+    position: absolute;
+    margin-left: 65px;
+}
+
+.categoria__img {
+    height: 175px;
+    width: 100px;
+    margin: 40px 45px;
+}
+
+.categoria__contenedor-2 {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* -----------------------Index-------------------------------- */
+
+
+
+
+
+/* -------------------Mas Vendidos-------------------------------- */
+
+.mv__main{
+    background: #000;
+    padding: 115px auto;
+    color: white;
+    padding-top: 50px ;
+}
+
+.mv__contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mv__titulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 64px;
+    font-size: 69px;
+    position: relative;
+    margin-left: 50px;
+}
+
+.mv__grid {
+    display:grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 220px);
+    padding: 0 0 100px 0;
+}
+
+.mv__categoria {
+    display: flex;
+    gap: 1rem;
+}
+.mv__img{
+    width: 125px;
+    height: 220px;
+}
+
+.mv__descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mv__puesto{
+    padding: 10px 0 10px 0;
+}
+
+.mv__precio{
+    text-align: center;
+    font-size: 25px;
+    color: #ff5b34;
+    font-weight: bold;
+}
+
+.mv__comprar{
+    background: #ff5b34;
+    border-radius: 20px;
+    font-weight:bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    cursor: pointer;
+    max-width: 150px;
+}
+
+/* -------------------Mas Vendidos-------------------------------- */
+
+
+
+
+
+
+
+/* -----------------------Mayorista-------------------------------- */
+
+.mayorista__main {
+    background: #000000;
+    color: #faf1ed;
+}
+
+.mayorista__titulo{
+    max-width: 700px;
+    padding: 50px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.mayorista__boton h2 {
+    background: #ff5b34;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 7px 125px;
+    margin-left:50px ;
+    font-size: 25px;
+}
+
+.mayorista__contacto{
+    padding: 0 50px;
+}
+
+.mayorista__contacto h4 {
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.mayorista__caracteristicas{
+    margin-left:50px ;
+    margin-top: 50px;
+}
+
+.mayorista-contenedor {
+    max-width: 1200px;
+    padding: 50px 0;
+    display: flex;
+    height: 250px;
+    justify-content: space-between;
+}
+
+.mayorista-contenedor h2 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 30px ;
+}
+.mayorista-contenedor p {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+.mayorista__contenido  {
+    text-align: center;
+    padding: 0 10px;
+}
+
+
+.mayorista__contenido-centro {
+    text-align: center;
+    border-left: 3px solid #00b188;
+    border-right: 3px solid #5769e9;
+    padding: 0 10px;
+}
+
+
+/* -----------------------Mayorista-------------------------------- */
+
+
+
+
+
+
+
+
+/* -----------------------Contactos-------------------------------- */
+.contenedor-main{
+    width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid #cecaca;
+    border-top-width: 0;
+}
+
+.contenedor__fondo {
+    height: 320px;
+    background: black url(/img/contato.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.contenedor__logo {
+    text-align: center;
+    margin: 80px 0 ;
+
+}
+
+.contenedor__titulo {
+    color: #4DBDEB;
+    font-size: 50px;
+}
+
+.logotipo {
+    width: 310px;
+
+}
+
+.contenido {
+    margin: 30px 60px;
+}
+
+.contenido__texto {
+    text-align: justify;
+}
+
+.contenido label {
+    display: block;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.formulario-contacto {
+    margin-top: 20px;
+}
+
+.control--contacto {
+    width: 400px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'sans-sarif';
+    border: 1px solid #DFEEEE;
+    padding: 14px 12px;
+    margin: 8px 0;
+}
+
+.boton {
+    background: black;
+    border: none;
+    color:white;
+    display: block;
+    margin: auto;
+    border-radius: 2rem;
+    padding: 20px 60px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* -----------------------Contactos-------------------------------- */
+
+
+
+
+
+
+
+
+
+/* -------------------------Registro-------------------------------- */
+
+.registro__main{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background: rgb(172,30,153);
+    background: linear-gradient(22deg, rgba(172,30,153,1) 15%, rgba(142,31,156,1) 26%, rgba(90,29,120,1) 54%, rgba(75,36,134,1) 82%, rgba(31,66,170,1) 96%);
+}
+
+.formulario {
+    width: 400px;
+    background: #022f41;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#f1f1f1;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.formulario__titulo {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.control--registro {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #f1f1f1;
+}
+
+.formulario__texto {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.boton {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+
+}
+
+.formulario__enlace {
+    color: white;
+}
+/* -------------------------Registro-------------------------------- */
+
+
+
+
+
+/* -------------------Footer------------------------------ */
+
+.footer__contenedor {
+    max-width: 100%;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 50px 0 ;
+}
+.filas {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__columnas {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer__titulo {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.footer__enlace {
+    font-size: 23px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer__columnas .redes-sociales .footer__enlace {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+/* <-----------------Vistas------------------------------->*/
+
+@media (max-width: 1024px ) {
+
+    .enlace-logo{
+        padding-left: 5px;
+    }
+
+    .nav__lista li a {
+        font-size: 1rem;
+        padding: 7px 7px;
+    }
+    
+    
+    /* -----------------------Index-------------------------------- */
+
+    .main__categoria {
+        margin: 1rem;
+    }
+
+
+    .categoria__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* -----------------------Index-------------------------------- */
+
+    .mv__grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    /* -------------------Mas Vendidos-------------------------------- */
+
+
+
+    /* -------------------Mas Vendidos-------------------------------- */
+
+
+
+    /* -----------------------Mayorista-------------------------------- */
+
+    .mayorista-contenedor {
+        flex-direction:column ;
+        padding: 50px 0;
+        height: auto;
+    }
+
+    .mayorista-contenedor h2, p{
+        text-align: start;
+        margin-bottom: 0;
+    }
+    .mayorista-contenedor h2{
+        padding-bottom:10px ;
+    }
+
+    .mayorista-contenedor p{
+        padding-bottom:30px ;
+    }
+    .mayorista__contenido-centro {
+        border: none;
+    }
+
+    .contenido__titulo-1 {
+        color: #00b188 ;
+    }
+    .contenido__titulo-2 {
+        color: #5769e9;
+    }
+    
+    .contenido__titulo-3 {
+        color: #ff5b35;
+    }
+
+    /* -----------------------Mayorista-------------------------------- */
+        
+
+
+    /* -----------------------Contactos-------------------------------- */
+
+        
+    
+    /* -----------------------Contactos-------------------------------- */
+
+
+
+    /* -------------------------Registro-------------------------------- */
+
+    /* -----------------------En Progreso-------------------------------- */
+
+    /* -------------------------Registro-------------------------------- */
+
+
+
+
+    
+/* -------------------Footer------------------------------ */
+    .footer__columnas{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
+
+}
+@media (max-width: 600px) {
+
+    .check-boton{
+        display: block;
+        margin-right: 2rem;
+    }
+    .nav__lista{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #24303c;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        top: 79px;
+    }
+
+    .nav__lista li {
+        display: block;
+        line-height: 50px 0;
+        margin: 50px 0;
+    }
+
+    .nav__lista li a {
+        font-size: 20px;
+    }
+
+    .activo, .nav__lista li a:hover{
+        background: none;
+        color: rgb(0, 255, 42);
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    
+    /* -----------------------Index-------------------------------- */
+
+    /* -------------------En Progeso-------------------------------- */
+
+    
+    .categoria__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .baner-item {
+        gap: 10px;
+    }
+
+    /* -----------------------Index-------------------------------- */
+
+    
+
+    /* -------------------Mas Vendidos-------------------------------- */
+
+    .mv__categoria{
+        padding: 0 auto;
+    }
+
+    .mv__grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    /* -------------------Mas Vendidos-------------------------------- */
+
+        
+
+    /* -----------------------Contactos-------------------------------- */
+
+    /* -----------------------En Progreso-------------------------------- */
+
+    /* -----------------------Contactos-------------------------------- */
+
+
+
+    /* -------------------------Registro-------------------------------- */
+
+    /* -----------------------En Progreso-------------------------------- */
+
+    /* -------------------------Registro-------------------------------- */
+
+
+
+    
+    /* -------------------Footer------------------------------ */
+    .footer__columnas{
+        width: 100%;
+        text-align: left;
+    }
+}
