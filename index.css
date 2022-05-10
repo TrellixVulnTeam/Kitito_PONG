@@ -643,16 +643,13 @@ ul{
 }
 @media screen and (max-width: 600px) {
 
-    body{
-        position: relative;
-    }
 
     .check-boton{
         display: block;
         margin-right: 2rem;
     }
     .nav__lista{
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100%;
         background: #24303c;
@@ -688,7 +685,11 @@ ul{
     
     /* -----------------------Index-------------------------------- */
 
-
+    .infinito {
+        font-size: 35px;
+        margin-left: 0%;
+        margin: 0 35px;
+    }
 
     /* -----------------------Index-------------------------------- */
 
@@ -773,4 +774,6 @@ ul{
         width: 100%;
         text-align: left;
     }
+    
+    
 }
