@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../index.css">
     <!-- Enlaces de Externos  -->
     <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Holtwood+One+SC&family=Permanent+Marker&family=Titan+One&display=swap" rel="stylesheet">
@@ -34,36 +34,30 @@
             </nav>
         </header>
 
-    <main class="contenedor-main">
-            <section>
-                <div class="contenedor__fondo">
-                    <div class="contenedor__logo">                        
-                        <img class="logotipo" src="/img/kitito.png" alt="logotipo">
-                        <h2 class="contenedor__titulo">Contactanos para mas Información</h2>
-                    </div>
+    <div class="contacto__formulario">
+        <form action="" class="form__contactos">
+            <div class="formulario__contenedor">
+                <h1 class="titulo__formulario">Contactanos</h1>
+                <div class="grupo">
+                    <input type="text" name="nombre" id="nombre"></span>
+                    <label for="nombre">Nombre</label>
                 </div>
-            </section>
-
-            <section>
-                <div class="contenido">
-                    <p class="contenido__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem dignissimos unde perspiciatis recusandae repellendus eum sequi optio quasi dolorem praesentium. Laborum iure ducimus doloribus, totam corporis magni reiciendis temporibus harum.</p>
-                    <form class="formulario-contacto" action="">
-                        <label for="nombre-apellido">Nombre y Apellido</label>
-                        <input type="text" class="control--contacto" name="nombre-apellido" id="nombre-apellido">
-                        
-                        <label for="numero-telefono">Numero de Telefono</label>
-                        <input type="number" class="control--contacto" name="numero-telefono" id="numero-telefono">
-                        
-                        <label for="correo">Email</label>
-                        <input type="email" class="control--contacto" name="correo" id="correo">
-                        
-                        <label for="textarea"></label>
-                        <textarea class="control--contacto" name="tu-mensaje" id="tu-mensaje" cols="30" rows="10">Tu Mensaje</textarea>
-                        <button class="boton">Enviar</button>
-                    </form>
+                <div class="grupo">
+                    <input type="email" name="email" id="email"></span>
+                    <label for="email">Email</label>
                 </div>
-            </section>
-    </main>
+                <div class="grupo">
+                    <input type="text" name="edad" id="edad"></span>
+                    <label for="edad">Edad</label>
+                </div>
+                <div class="grupo">
+                    <textarea name="mensaje" id="mensaje" rows="3"></textarea>
+                    <label for="mensaje">Mensaje</label>
+                </div>
+                <button type="submit" class="boton__contacto">Contactar</button>
+            </div>
+        </form>
+    </div>
 
     <footer class="footer">
         <div class="footer__contenedorr">
@@ -102,5 +96,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

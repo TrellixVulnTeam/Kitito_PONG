@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 body {
@@ -11,7 +11,10 @@ body {
 }
 
 nav {
-    background-color: #2fcdcd;
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     height: 80px;
     width: 100%;
     border-bottom: 1px solid #fff;
@@ -51,8 +54,8 @@ nav {
     margin: 20px 5px;
 }
 
-.activo, .nav__lista li a:hover {
-    background: rgb(0, 0, 100);
+.nav__lista li a:hover {
+    background: rgb(75, 207, 75);
     transition: .5s;
 }
 
@@ -73,33 +76,6 @@ nav {
 
 /* -----------------------Index-------------------------------- */
 
-.baner{
-    margin-bottom: 25px;
-}
-.baner__img {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0;
-}
-
-.baner-item {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    gap: 40px;
-    
-}
-
-.circulo {
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.circulo:hover {
-    background: rgb(29, 166, 245);
-    transition: all .3s;
-}
 
 .infinito {
     margin-left: 75px;
@@ -322,77 +298,84 @@ nav {
 
 
 /* -----------------------Contactos-------------------------------- */
-.contenedor-main{
-    width: 1000px;
-    margin: 0 auto;
-    background: white;
-    border: 1px solid #cecaca;
-    border-top-width: 0;
+
+.contacto__formulario {
+    background: #fc00ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.contenedor__fondo {
-    height: 320px;
-    background: black url(/img/contato.jpg) center center no-repeat;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-}
-
-.contenedor__logo {
+.titulo__formulario {
     text-align: center;
-    margin: 80px 0 ;
-
+    margin: 10px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
 }
 
-.contenedor__titulo {
-    color: #4DBDEB;
-    font-size: 50px;
+.form__contactos{
+    background: #fff;
+    width: 30%;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(255 , 255, 255, .8);
 }
-
-.logotipo {
-    width: 310px;
-
-}
-
-.contenido {
-    margin: 30px 60px;
-}
-
-.contenido__texto {
-    text-align: justify;
-}
-
-.contenido label {
-    display: block;
-    font-size: 16px;
-    font-weight: 900;
-}
-
-.formulario-contacto {
-    margin-top: 20px;
-}
-
-.control--contacto {
-    width: 400px;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'sans-sarif';
-    border: 1px solid #DFEEEE;
-    padding: 14px 12px;
-    margin: 8px 0;
-}
-
-.boton {
-    background: black;
-    border: none;
-    color:white;
-    display: block;
+.formulario__contenedor {
+    width: 100%;
     margin: auto;
-    border-radius: 2rem;
-    padding: 20px 60px;
-    margin-top: 20px;
-    cursor: pointer;
 }
+
+.grupo {
+    position: relative;
+    margin: 45px;
+}
+
+.grupo input, textarea {
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px ;
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid;
+    resize: none;
+
+}
+
+.grupo label {
+    top: -16px;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.grupo input:focus,textarea:focus {
+    outline: none;
+    color: rgb(94, 93, 93);
+}
+
+.boton__contacto{
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 10px    auto;
+    cursor: pointer;
+    background: linear-gradient(to right, #00dbde, #fc00ff);
+    
+}
+
+
 
 /* -----------------------Contactos-------------------------------- */
 
@@ -527,7 +510,7 @@ ul{
 
 /* <-----------------Vistas------------------------------->*/
 
-@media (max-width: 1024px ) {
+@media screen and (max-width: 1024px ) {
 
     .enlace-logo{
         padding-left: 5px;
@@ -541,14 +524,6 @@ ul{
     
     /* -----------------------Index-------------------------------- */
 
-    .main__categoria {
-        margin: 1rem;
-    }
-
-
-    .categoria__grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 
     /* -----------------------Index-------------------------------- */
 
@@ -605,7 +580,9 @@ ul{
 
     /* -----------------------Contactos-------------------------------- */
 
-        
+        .form__contactos{
+            width: 65%;
+        }
     
     /* -----------------------Contactos-------------------------------- */
 
@@ -631,7 +608,7 @@ ul{
 
 
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     .check-boton{
         display: block;
@@ -646,6 +623,7 @@ ul{
         text-align: center;
         transition: all .5s;
         top: 79px;
+        
     }
 
     .nav__lista li {
@@ -658,9 +636,11 @@ ul{
         font-size: 20px;
     }
 
-    .activo, .nav__lista li a:hover{
-        background: none;
-        color: rgb(0, 255, 42);
+    .nav__lista li a:hover{
+        background: #0f0c29;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
     }
 
     #check:checked ~ ul {
@@ -670,15 +650,7 @@ ul{
     
     /* -----------------------Index-------------------------------- */
 
-    /* -------------------En Progeso-------------------------------- */
 
-    
-    .categoria__grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .baner-item {
-        gap: 10px;
-    }
 
     /* -----------------------Index-------------------------------- */
 
@@ -686,8 +658,14 @@ ul{
 
     /* -------------------Mas Vendidos-------------------------------- */
 
+    .mv__titulo {
+        padding: 0 30px;
+        font-size: 50px;
+        margin: 10px auto;
+    }
+
     .mv__categoria{
-        padding: 0 auto;
+        margin: 0 auto;
     }
 
     .mv__grid{
@@ -698,10 +676,39 @@ ul{
     /* -------------------Mas Vendidos-------------------------------- */
 
         
+    /* -----------------------Mayorista-------------------------------- */
+
+    .mayorista__titulo{
+        padding: 40px;
+        font-size: 1rem;
+    }
+
+    .mayorista__boton h2 {
+        margin: 0 0 0 40px;
+        padding: 5px 40px;
+    }
+
+    .mayorista__contacto{
+        padding: 0 40px;
+    }
+        
+    .mayorista__contacto h4 {
+        padding-top: 20px;
+        font-size: 20px;
+    }
+
+    .mayorista__caracteristicas{
+        margin: 50px 0 0 20px;
+    }
+
+    /* -----------------------Mayorista-------------------------------- */
 
     /* -----------------------Contactos-------------------------------- */
 
-    /* -----------------------En Progreso-------------------------------- */
+    
+    .form__contactos{
+        width: 90%;
+    }
 
     /* -----------------------Contactos-------------------------------- */
 
@@ -709,7 +716,14 @@ ul{
 
     /* -------------------------Registro-------------------------------- */
 
-    /* -----------------------En Progreso-------------------------------- */
+    
+    .formulario {
+        width: 90%;
+    }
+    .formulario__texto{
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
 
     /* -------------------------Registro-------------------------------- */
 
