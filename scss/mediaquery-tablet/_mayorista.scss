@@ -1,0 +1,35 @@
+@media screen and (max-width: 1024px ) {
+    
+    .mayorista-contenedor {
+        flex-direction:column ;
+        padding: 50px 0;
+        height: auto;
+    }
+
+    .mayorista-contenedor h2, p{
+        text-align: start;
+        margin-bottom: 0;
+    }
+    .mayorista-contenedor h2{
+        padding-bottom:10px ;
+    }
+
+    .mayorista-contenedor p{
+        padding-bottom:30px ;
+    }
+    .mayorista__contenido-centro {
+        border: none;
+    }
+    
+
+    .contenido__titulo-1 {
+        color: #00b188 ;
+    }
+    .contenido__titulo-2 {
+        color: #5769e9;
+    }
+    
+    .contenido__titulo-3 {
+        color: #ff5b35;
+    }
+}

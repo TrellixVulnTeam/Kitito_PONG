@@ -1,0 +1,28 @@
+
+//? Variable 
+
+@import "_variable.scss";
+
+
+@import "modulos/_header";
+@import "modulos/_nav.scss";
+@import "modulos/_index.scss";
+@import "modulos/_contactos.scss";
+@import "modulos/_mas-vendidos.scss";
+@import "modulos/_mayorista.scss";
+@import "modulos/_registro.scss";
+@import "modulos/_footer.scss";
+
+@import "mediaquery-tablet/_header.scss";
+@import "mediaquery-tablet/_index.scss";
+@import "mediaquery-tablet/_contactos.scss";
+@import "mediaquery-tablet/_mayorista.scss";
+@import "mediaquery-tablet/_footer.scss";
+
+@import "mediaquery-mobil/_header.scss";
+@import "mediaquery-mobil/_index.scss";
+@import "mediaquery-mobil/_contacto.scss";
+@import "mediaquery-mobil/_mayorista.scss";
+@import "mediaquery-mobil/_mas-vendido.scss";
+@import "mediaquery-mobil/_registro.scss";
+@import "mediaquery-mobil/_footer.scss";

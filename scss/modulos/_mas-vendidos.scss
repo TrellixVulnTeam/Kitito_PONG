@@ -1,0 +1,65 @@
+.mv__main{
+    background: #000;
+    padding: 115px auto;
+    color: white;
+    padding-top: 50px ;
+}
+
+.mv__contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mv__titulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 64px;
+    font-size: 69px;
+    position: relative;
+    margin-left: 50px;
+}
+
+.mv__grid {
+    display:grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 220px);
+    padding: 0 0 100px 0;
+}
+
+.mv__categoria {
+    display: flex;
+    gap: 1rem;
+}
+.mv__img{
+    width: 125px;
+    height: 220px;
+}
+
+.mv__descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mv__puesto{
+    padding: 10px 0 10px 0;
+}
+
+.mv__precio{
+    text-align: center;
+    font-size: 25px;
+    color: #ff5b34;
+    font-weight: bold;
+}
+
+.mv__comprar{
+    background: #ff5b34;
+    border-radius: 20px;
+    font-weight:bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    cursor: pointer;
+    max-width: 150px;
+}

@@ -1,0 +1,83 @@
+.mayorista__main {
+    background: #000000;
+    color: #faf1ed;
+}
+
+.mayorista__titulo{
+    max-width: 700px;
+    padding: 50px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.mayorista__boton span {
+    background: #ff5b34;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 7px 125px;
+    margin-left:50px ;
+    font-size: 25px;
+}
+
+.mayorista__contacto{
+    padding: 0 50px;
+}
+
+.mayorista__contacto h4 {
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.mayorista__caracteristicas{
+    margin-left:50px ;
+    margin-top: 50px;
+}
+
+.mayorista-contenedor {
+    max-width: 1200px;
+    padding: 50px 0;
+    display: flex;
+    height: 250px;
+    justify-content: space-between;
+}
+
+.mayorista-contenedor h2 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 30px ;
+}
+.mayorista-contenedor p {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+.mayorista__contenido  {
+    text-align: center;
+    padding: 0 10px;
+}
+
+
+.mayorista__contenido-centro {
+    text-align: center;
+    border-left: 3px solid #00b188;
+    border-right: 3px solid #5769e9;
+    padding: 0 10px;
+}
+
+.emote-texto{
+    display: block;
+    margin-top: 5px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.emote-texto-3 {
+    color: #00b188 ;
+}
+.emote-texto-2 {
+    color: #5769e9;
+}
+
+.emote-texto-1 {
+    color: #ff5b35;
+}

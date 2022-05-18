@@ -1,0 +1,65 @@
+nav {
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid $color-blanco;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, .6);
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.enlace-logo {
+    position: absolute;
+    padding: 20px;
+}
+
+.nav__logo {
+    font-family: 'Gravitas One', cursive;
+    font-size: 30px;
+    margin-left: 30px; ;
+    color: #000;
+    font-weight: bold;
+}
+
+.nav__lista li a {
+    padding: 7px 13px;
+    font-size: 18px;
+    display: block;
+    color: $color-blanco;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+}
+
+.nav__lista {
+    float: right;
+    margin-right: 20px;
+}
+
+.nav__lista li {
+    display: inline-block;
+    margin: 20px 5px;
+}
+
+.nav__lista li a:hover {
+    background: rgb(75, 207, 75);
+    transition: .5s;
+}
+
+.check-boton {
+    font-size: 30px;
+    color:$color-blanco;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}

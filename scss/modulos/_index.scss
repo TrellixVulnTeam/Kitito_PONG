@@ -1,0 +1,59 @@
+.body-index{
+    background: #616161;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card {
+    border: none;
+    outline: none;
+    background-color: $color-blanco;
+    border-radius: 20px;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    transition: all .3s;
+}
+
+.text1{
+    font-size: 13px;
+    color: #cbcbcb;
+}
+
+.info{
+    line-height: 17px;
+}
+
+.star{
+    color: #fbc02d;
+}
+
+.cost span {
+    color: #fb3531;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-card {
+    background: #dc3545;
+}
+
+.btn-card:hover {
+    opacity: .8;
+}
+
+.cursor {
+    cursor: pointer;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 20px;
+}
+
+.infinito {
+    margin-left: 75px;
+    font-size: 75px;
+    color: rgb(255, 72, 0)
+}
+.infinito span i {
+    text-transform: uppercase;
+}
