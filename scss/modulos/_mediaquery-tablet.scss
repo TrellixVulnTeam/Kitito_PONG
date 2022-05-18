@@ -1,5 +1,31 @@
 @media screen and (max-width: 1024px ) {
+
+    .enlace-logo{
+        padding-top:25px ;
+        padding-left: 10px;
+    }
+    .nav__lista {
+        gap: none;
+    }
+
+    .nav__lista li a {
+        font-size: 1rem;
+        padding: 7px 0;
+    }
     
+    .nav__logo{
+        margin: 0;
+        font-size: 20px ;
+    }
+
+    //? index
+    .mv__grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    //? mayorista
+
     .mayorista-contenedor {
         flex-direction:column ;
         padding: 50px 0;
@@ -32,4 +58,17 @@
     .contenido__titulo-3 {
         color: #ff5b35;
     }
-}
+
+    // ? mayorista
+
+    .form__contactos{
+        width: 65%;
+    }
+
+    //? footer
+
+    .footer__columnas{
+        width: 50%;
+        margin-bottom: 30px;
+        }
+    }

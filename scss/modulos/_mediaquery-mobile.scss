@@ -1,0 +1,117 @@
+@media screen and (max-width: 600px) {
+
+
+    .check-boton{
+        display: block;
+        margin-right: 2rem;
+    }
+    .nav__lista{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #24303c;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        top: 79px;
+        z-index: 100;
+    }
+
+    .nav__lista li {
+        display: block;
+        line-height: 50px 0;
+        margin: 50px 0;
+    }
+
+    .nav__lista li a {
+        font-size: 20px;
+        display: inline;
+    }
+
+    .nav__lista li a:hover{
+        background: #0f0c29;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    //? index
+
+    .infinito {
+        font-size: 35px;
+        margin-left: 0%;
+        margin: 0 35px;
+        }
+
+    //? contactos
+    
+    .form__contactos{
+        width: 90%;
+    }
+
+    //? mas vendidos
+
+    .mv__titulo {
+        padding: 0 30px;
+        font-size: 50px;
+        margin: 10px auto;
+    }
+
+    .mv__categoria{
+        margin: 0 auto;
+    }
+
+    .mv__grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    //? mayorista
+
+    .mayorista__titulo{
+        font-size: 1rem;
+    }
+
+    .mayorista__boton span {
+        margin: 0 0 0 40px;
+        padding: 5px 40px;
+        font-size: 20px;
+    }
+
+    .mayorista__contacto{
+        padding: 0 40px;
+    }
+        
+    .mayorista__contacto h4 {
+        padding-top: 20px;
+        font-size: 19px;
+    }
+
+    .mayorista__caracteristicas{
+        margin: 50px 0 0 20px;
+    }
+    .emote-texto{
+        font-size: 25px;
+    }
+
+    //? registro
+
+    .formulario {
+        width: 90%;
+    }
+    .formulario__texto{
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+
+    //? footer
+
+    .footer__columnas{
+        width: 100%;
+        text-align: left;
+    }
+}
