@@ -71,12 +71,7 @@ ul {
   display: none; }
 
 .body-index {
-  background: #616161;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #9bc5c3, #616161);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #9bc5c3, #616161);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  background: #faf0ee; }
 
 .card {
   border: none;
@@ -435,18 +430,10 @@ ul {
     padding: 7px 0; }
   .nav__logo {
     margin: 0;
-    font-size: 20px; } }
-
-@media screen and (max-width: 1024px) {
+    font-size: 20px; }
   .mv__grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr); } }
-
-@media screen and (max-width: 1024px) {
-  .form__contactos {
-    width: 65%; } }
-
-@media screen and (max-width: 1024px) {
+    grid-template-rows: repeat(3, 1fr); }
   .mayorista-contenedor {
     flex-direction: column;
     padding: 50px 0;
@@ -465,9 +452,9 @@ ul {
   .contenido__titulo-2 {
     color: #5769e9; }
   .contenido__titulo-3 {
-    color: #ff5b35; } }
-
-@media screen and (max-width: 1024px) {
+    color: #ff5b35; }
+  .form__contactos {
+    width: 65%; }
   .footer__columnas {
     width: 50%;
     margin-bottom: 30px; } }
@@ -501,19 +488,22 @@ ul {
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   #check:checked ~ ul {
-    left: 0; } }
-
-@media screen and (max-width: 600px) {
+    left: 0; }
   .infinito {
     font-size: 35px;
     margin-left: 0%;
-    margin: 0 35px; } }
-
-@media screen and (max-width: 600px) {
+    margin: 0 35px; }
   .form__contactos {
-    width: 90%; } }
-
-@media screen and (max-width: 600px) {
+    width: 90%; }
+  .mv__titulo {
+    padding: 0 30px;
+    font-size: 50px;
+    margin: 10px auto; }
+  .mv__categoria {
+    margin: 0 auto; }
+  .mv__grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr); }
   .mayorista__titulo {
     font-size: 1rem; }
   .mayorista__boton span {
@@ -528,27 +518,12 @@ ul {
   .mayorista__caracteristicas {
     margin: 50px 0 0 20px; }
   .emote-texto {
-    font-size: 25px; } }
-
-@media screen and (max-width: 600px) {
-  .mv__titulo {
-    padding: 0 30px;
-    font-size: 50px;
-    margin: 10px auto; }
-  .mv__categoria {
-    margin: 0 auto; }
-  .mv__grid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr); } }
-
-@media screen and (max-width: 600px) {
+    font-size: 25px; }
   .formulario {
     width: 90%; }
   .formulario__texto {
     line-height: 20px;
-    margin-bottom: 5px; } }
-
-@media screen and (max-width: 600px) {
+    margin-bottom: 5px; }
   .footer__columnas {
     width: 100%;
     text-align: left; } }
