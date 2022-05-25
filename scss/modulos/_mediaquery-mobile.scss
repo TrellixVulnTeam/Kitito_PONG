@@ -1,6 +1,7 @@
 @media screen and (max-width: 600px) {
 
 
+
     .check-boton{
         display: block;
         margin-right: 2rem;
@@ -25,20 +26,23 @@
 
     .nav__lista li a {
         font-size: 20px;
-        display: inline;
     }
 
     .nav__lista li a:hover{
-        background: #0f0c29;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+        background: none;
+        transform: translateX(20px) ;
+        transition: all .5s;
+    }
+    .nav__lista li a:active{
+        color: red;
     }
 
     #check:checked ~ ul {
         left: 0;
     }
-
+    ol, ul {
+        padding-left: 0;
+    }
     //? index
 
     .infinito {
@@ -55,6 +59,10 @@
 
     //? mas vendidos
 
+    .mv__img {
+        margin-left: 10px;
+    }
+
     .mv__titulo {
         padding: 0 30px;
         font-size: 50px;
@@ -63,11 +71,27 @@
 
     .mv__categoria{
         margin: 0 auto;
+        gap: 5px;
+    }
+
+    .mv__precio {
+        text-align: start;
+        padding: 0 ;
     }
 
     .mv__grid{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
+    }
+
+    .mv__nombre h3 {
+        text-align: start;
+    }
+
+    .mv__comprar {
+        margin: 0 0 ;
+        margin-bottom: 15px;
+        max-width: 125px;
     }
 
     //? mayorista
