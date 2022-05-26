@@ -60,10 +60,14 @@ top: 0;}
     color: rgb(94, 93, 93);
 }
 
+@mixin size ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
 .boton__contacto{
     display: block;
-    width: 100px;
-    height: 40px;
+    @include size (100px, 40px);
     border: none;
     color: $color-blanco;
     border-radius: 4px;

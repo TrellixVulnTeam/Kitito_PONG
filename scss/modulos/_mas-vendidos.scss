@@ -53,11 +53,19 @@
     text-align: center;
 }
 
-.mv__precio{
-    text-align: center;
-    font-size: 25px;
-    color: #ff5b34;
-    font-weight: bold;
+//? usando Maps-Get
+$estilos: ( 
+    color: #ff5b34,
+    tfuente: 25px,
+    centro: center,
+    wfuente: bold
+);
+
+.mv__precio {
+    text-align: map-get($estilos, center);
+    font-size:map-get($estilos, tfuente);
+    color: map-get($estilos, color);
+    font-weight: map-get($estilos, wfuente);
 }
 
 .mv__comprar{

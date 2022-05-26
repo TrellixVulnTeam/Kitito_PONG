@@ -1,0 +1,66 @@
+//* aplicando mapas en scss
+//! implementando maps en la linea 77 de _mayorista.scss
+
+$emote-texto: (
+    emote-texto-1: #00b188,
+    emote-texto-2: #5769e9,
+    emote-texto-3: #ff5b35
+);
+
+@each $clave, $valor in $emote-texto {
+    .#{$clave} {
+        color: $valor;
+    }
+}
+
+//? maplicando Map-Get
+//! implementando maps en la linea 57 de _mas-vendidos.scss
+
+$estilos: ( 
+    color: #ff5b34,
+    tfuente: 25px,
+    centro: center,
+    wfuente: bold
+);
+
+.mv__precio {
+    text-align: map-get($estilos, center);
+    font-size:map-get($estilos, tfuente);
+    color: map-get($estilos, color);
+    font-weight: map-get($estilos, wfuente);
+}
+
+//? utilizando Extend
+//! implementando Extend en la linea 48 de _footer.scss
+
+.footer__columnas {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: $color-blanco;
+}
+.redes-sociales {
+    @extend .footer__columnas;
+    margin-left: 32px;
+}
+
+.footer__enlace{
+    @extend .footer__columnas;
+}
+
+//? utilizando Mixin
+//! implementando Mixin en la linea 63 de _contactos.scss
+
+@mixin size ($width, $height) {
+    width: $width;
+    height: $height;
+}
+.boton__contacto {
+    @include size (100px, 40px)
+}
+

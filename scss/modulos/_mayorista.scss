@@ -61,8 +61,8 @@
 
 .mayorista__contenido-centro {
     text-align: center;
-    border-left: 3px solid #00b188;
-    border-right: 3px solid #5769e9;
+    border-right: 3px solid #00b188;
+    border-left: 3px solid #5769e9;
     padding: 0 10px;
 }
 
@@ -72,13 +72,16 @@
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.emote-texto-3 {
-    color: #00b188 ;
-}
-.emote-texto-2 {
-    color: #5769e9;
-}
 
-.emote-texto-1 {
-    color: #ff5b35;
+//* aplicando mapas en scss
+$emote-texto: (
+    emote-texto-1: #ff5b35,
+    emote-texto-2: #5769e9,
+    emote-texto-3: #00b188
+);
+
+@each $clave, $valor in $emote-texto {
+    .#{$clave} {
+        color: $valor;
+    }
 }

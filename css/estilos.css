@@ -234,7 +234,6 @@ ul {
   text-align: center; }
 
 .mv__precio {
-  text-align: center;
   font-size: 25px;
   color: #ff5b34;
   font-weight: bold; }
@@ -302,8 +301,8 @@ ul {
 
 .mayorista__contenido-centro {
   text-align: center;
-  border-left: 3px solid #00b188;
-  border-right: 3px solid #5769e9;
+  border-right: 3px solid #00b188;
+  border-left: 3px solid #5769e9;
   padding: 0 10px; }
 
 .emote-texto {
@@ -312,14 +311,14 @@ ul {
   font-size: 25px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
-.emote-texto-3 {
-  color: #00b188; }
+.emote-texto-1 {
+  color: #ff5b35; }
 
 .emote-texto-2 {
   color: #5769e9; }
 
-.emote-texto-1 {
-  color: #ff5b35; }
+.emote-texto-3 {
+  color: #00b188; }
 
 .registro__main {
   padding-top: 100px;
@@ -387,7 +386,7 @@ ul {
   display: flex;
   flex-wrap: wrap; }
 
-.footer__columnas {
+.footer__columnas, .redes-sociales, .footer__enlace {
   width: 25%;
   padding: 0 15px; }
 
@@ -412,7 +411,7 @@ ul {
 .footer__enlace:hover {
   transform: translatey(-6px); }
 
-.footer__columnas .redes-sociales .footer__enlace {
+.footer__columnas, .redes-sociales, .footer__enlace {
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -462,7 +461,7 @@ ul {
     color: #ff5b35; }
   .form__contactos {
     width: 65%; }
-  .footer__columnas {
+  .footer__columnas, .redes-sociales, .footer__enlace {
     width: 50%;
     margin-bottom: 30px; } }
 
@@ -543,6 +542,6 @@ ul {
   .formulario__texto {
     line-height: 20px;
     margin-bottom: 5px; }
-  .footer__columnas {
+  .footer__columnas, .redes-sociales, .footer__enlace {
     width: 100%;
     text-align: left; } }

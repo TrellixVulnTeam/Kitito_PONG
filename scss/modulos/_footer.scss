@@ -45,9 +45,7 @@ ul{
     transform: translatey(-6px);
 }
 
-
-
-.footer__columnas .redes-sociales .footer__enlace {
+.footer__columnas {
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -58,7 +56,11 @@ ul{
     border-radius: 50%;
     color: $color-blanco;
 }
-
-.redes-sociales{
+.redes-sociales {
+    @extend .footer__columnas;
     margin-left: 32px;
+}
+
+.footer__enlace{
+    @extend .footer__columnas;
 }
