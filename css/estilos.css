@@ -75,13 +75,10 @@ ul {
   background: #faf0ee; }
 
 .titulo-index {
-  margin: 30px 65px;
-  font-weight: bold; }
-
-.titulo-index h1 {
   font-family: 'Gravitas One', cursive;
   font-size: 70px;
   font-weight: 800;
+  margin: 30px auto;
   text-align: center; }
 
 .card {
@@ -448,6 +445,8 @@ ul {
   .nav__logo {
     margin: 0;
     font-size: 20px; }
+  .titulo-index {
+    font-size: 50px; }
   .mv__grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr); }
@@ -506,6 +505,8 @@ ul {
     left: 0; }
   ol, ul {
     padding-left: 0; }
+  .titulo-index {
+    font-size: 30px; }
   .infinito {
     font-size: 35px;
     margin-left: 0%;
