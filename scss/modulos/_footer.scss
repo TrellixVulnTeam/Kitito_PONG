@@ -45,7 +45,7 @@ ul{
     transform: translatey(-6px);
 }
 
-.footer__columnas {
+.footer__columnas .redes-sociales .footer__enlace {
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -57,10 +57,6 @@ ul{
     color: $color-blanco;
 }
 .redes-sociales {
-    @extend .footer__columnas;
     margin-left: 32px;
 }
 
-.footer__enlace{
-    @extend .footer__columnas;
-}

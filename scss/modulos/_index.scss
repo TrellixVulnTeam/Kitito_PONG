@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Holtwood+One+SC&family=Permanent+Marker&family=Titan+One&display=swap');
+
 .body-index{
     background: #faf0ee;
 }
+
+.titulo-index{
+    margin: 30px 65px;
+    font-weight: bold;
+}
+
+.titulo-index h1{
+    font-family: 'Gravitas One', cursive;
+    font-size: 70px;
+    font-weight: 800;
+    text-align: center;
+}
+
 
 .card {
     border: none;

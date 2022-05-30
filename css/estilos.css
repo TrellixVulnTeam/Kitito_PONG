@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Holtwood+One+SC&family=Permanent+Marker&family=Titan+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -72,6 +73,16 @@ ul {
 
 .body-index {
   background: #faf0ee; }
+
+.titulo-index {
+  margin: 30px 65px;
+  font-weight: bold; }
+
+.titulo-index h1 {
+  font-family: 'Gravitas One', cursive;
+  font-size: 70px;
+  font-weight: 800;
+  text-align: center; }
 
 .card {
   border: none;
@@ -386,7 +397,7 @@ ul {
   display: flex;
   flex-wrap: wrap; }
 
-.footer__columnas, .redes-sociales, .footer__enlace {
+.footer__columnas {
   width: 25%;
   padding: 0 15px; }
 
@@ -411,7 +422,7 @@ ul {
 .footer__enlace:hover {
   transform: translatey(-6px); }
 
-.footer__columnas, .redes-sociales, .footer__enlace {
+.footer__columnas .redes-sociales .footer__enlace {
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -461,7 +472,7 @@ ul {
     color: #ff5b35; }
   .form__contactos {
     width: 65%; }
-  .footer__columnas, .redes-sociales, .footer__enlace {
+  .footer__columnas {
     width: 50%;
     margin-bottom: 30px; } }
 
@@ -542,6 +553,6 @@ ul {
   .formulario__texto {
     line-height: 20px;
     margin-bottom: 5px; }
-  .footer__columnas, .redes-sociales, .footer__enlace {
+  .footer__columnas {
     width: 100%;
     text-align: left; } }
