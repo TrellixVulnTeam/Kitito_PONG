@@ -481,6 +481,13 @@ ul {
   width: 100%;
   padding-top: 30px; }
 
+.contenedor-img {
+  display: flex;
+  flex-wrap: wrap; }
+
+.contenedor-img img {
+  height: 45px; }
+
 .footer__contenedor {
   max-width: 100%;
   margin: auto; }
@@ -651,6 +658,10 @@ ul {
     margin: 50px 0 0 20px; }
   .emote-texto {
     font-size: 25px; }
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px; }
   .formulario {
     width: 90%; }
   .formulario__texto {

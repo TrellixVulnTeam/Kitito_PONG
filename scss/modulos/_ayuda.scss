@@ -183,3 +183,11 @@
     padding-top:30px ;
 }
 
+.contenedor-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-img img {
+    height: 45px;
+}
