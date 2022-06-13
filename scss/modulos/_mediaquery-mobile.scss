@@ -1,6 +1,18 @@
 @media screen and (max-width: 600px) {
 
 
+    nav{
+        position: fixed;
+        top: 0;
+        z-index: 100;
+    }
+
+    main {
+        padding-top: 81px;
+    }
+    
+    
+
 
     .check-boton{
         display: block;
@@ -34,12 +46,14 @@
         transition: all .5s;
     }
     .nav__lista li a:active{
-        color: red;
+        color: #000;
     }
 
     #check:checked ~ ul {
         left: 0;
     }
+    
+
     ol, ul {
         padding-left: 0;
     }
@@ -62,6 +76,9 @@
 
     //? mas vendidos
 
+    .mv__main{
+        padding-top: 81px;
+    }
     .mv__img {
         margin-left: 10px;
     }
@@ -130,6 +147,17 @@
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
         gap: 20px;
+    }
+    .contenedor-img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .contenedor-img img {
+        margin: 0 auto;
+        
     }
     //? registro
 

@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Holtwood+One+SC&family=Permanent+Marker&family=Titan+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -70,11 +69,21 @@ ul {
   background: #faf0ee; }
 
 .titulo-index {
-  font-family: 'Gravitas One', cursive;
-  font-size: 70px;
-  font-weight: 800;
-  margin: 30px auto;
-  text-align: center; }
+  padding: 20px 0;
+  margin-left: 75px; }
+
+.titulo-index h1 {
+  font-size: 48px;
+  font-weight: 600;
+  display: inline;
+  line-height: 1.5;
+  color: #1d1d1f; }
+
+.titulo-index p {
+  font-size: 48px;
+  font-weight: 600;
+  display: inline;
+  color: #6e6e73; }
 
 .card {
   border: none;
@@ -85,6 +94,10 @@ ul {
 .card:hover {
   transform: translateY(-15px);
   transition: all .3s; }
+
+.img-card {
+  padding: 10px 0;
+  width: 150px; }
 
 .text1 {
   font-size: 13px;
@@ -119,6 +132,17 @@ ul {
 
 .infinito span i {
   text-transform: uppercase; }
+
+.contenedor__cartas {
+  display: flex;
+  background: blue; }
+
+.cartita-abajo {
+  width: 315px;
+  height: 240px;
+  background: red;
+  border-radius: 15px;
+  margin: 50px 10px; }
 
 .contacto__formulario {
   background: #fc00ff;
@@ -189,12 +213,12 @@ ul {
   cursor: pointer;
   background: linear-gradient(to right, #00dbde, #fc00ff); }
 
-.mv__main {
+.mv__contenedor {
   background: #000;
   padding: 115px auto;
-  padding-top: 50px; }
+  padding-top: 20px; }
 
-.mv__contenedor {
+.mv__listado {
   max-width: 1200px;
   margin: 0 auto;
   color: #fff; }
@@ -205,7 +229,8 @@ ul {
   margin-bottom: 64px;
   font-size: 69px;
   position: relative;
-  margin-left: 50px; }
+  margin-left: 50px;
+  color: #fff; }
 
 .mv__grid {
   display: grid;
@@ -341,7 +366,8 @@ ul {
 .contenedor__titulo p {
   text-align: center;
   font-size: 20px;
-  padding: 13px; }
+  padding: 13px;
+  margin-bottom: 0; }
 
 .contenedor__titulo p a {
   color: #3170b7;
@@ -401,9 +427,10 @@ ul {
   color: #474747;
   border-radius: 20px;
   padding: 5px;
-  margin-top: -50px;
+  margin-top: -51px;
   overflow: hidden;
-  transition: all 300ms; }
+  transition: all 300ms;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 .info__description p {
   font-size: 14px;
@@ -462,7 +489,7 @@ ul {
   height: 1px;
   width: 80%;
   border: 1px solid #e7e5e7;
-  margin: 5px 0; }
+  margin: 5px auto; }
 
 .categorias__titulo p {
   font-size: 19px;
@@ -471,7 +498,9 @@ ul {
 
 .ayuda__equipos {
   background: #fff;
-  border-top: 1px solid #e7e5e7; }
+  border-top: 1px solid #e7e5e7;
+  padding-bottom: 50px;
+  width: 100%; }
 
 .ayuda__equipos h2 {
   color: #046a38;
@@ -479,13 +508,18 @@ ul {
   font-weight: 800;
   font-size: 35px;
   width: 100%;
-  padding-top: 30px; }
+  padding: 30px 0; }
 
 .contenedor-img {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 80%;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  gap: 30px; }
 
 .contenedor-img img {
+  margin: 15px auto;
   height: 45px; }
 
 .footer__contenedor {
@@ -578,6 +612,10 @@ ul {
     color: #5769e9; }
   .contenido__titulo-3 {
     color: #ff5b35; }
+  .card-grid {
+    gap: 35px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
   .form__contactos {
     width: 65%; }
   .footer__columnas {
@@ -585,6 +623,12 @@ ul {
     margin-bottom: 30px; } }
 
 @media screen and (max-width: 600px) {
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 100; }
+  main {
+    padding-top: 81px; }
   .check-boton {
     display: block;
     margin-right: 2rem; }
@@ -609,7 +653,7 @@ ul {
     transform: translateX(20px);
     transition: all .5s; }
   .nav__lista li a:active {
-    color: red; }
+    color: #000; }
   #check:checked ~ ul {
     left: 0; }
   ol, ul {
@@ -622,6 +666,8 @@ ul {
     margin: 0 35px; }
   .form__contactos {
     width: 90%; }
+  .mv__main {
+    padding-top: 81px; }
   .mv__img {
     margin-left: 10px; }
   .mv__titulo {
@@ -662,6 +708,13 @@ ul {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 20px; }
+  .contenedor-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0; }
+  .contenedor-img img {
+    margin: 0 auto; }
   .formulario {
     width: 90%; }
   .formulario__texto {

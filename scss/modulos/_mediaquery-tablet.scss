@@ -61,6 +61,13 @@
     .contenido__titulo-3 {
         color: #ff5b35;
     }
+    // ? ayuda
+
+    .card-grid {
+        gap: 35px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 
     // ? mayorista
 
